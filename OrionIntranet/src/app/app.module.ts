@@ -29,6 +29,10 @@ import {fab} from '@fortawesome/free-brands-svg-icons';
 library.add(fas, far, fab);
 
 
+// Modals
+import { LoginModule } from './components/modals/login/login.module';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -42,6 +46,7 @@ library.add(fas, far, fab);
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule,
     AngularFirestoreModule,
+    LoginModule,
   ],
   providers: [
     StatusBar,
